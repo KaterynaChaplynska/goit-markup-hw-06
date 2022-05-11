@@ -36,9 +36,6 @@ body {
   font-size: 14px;
 }
 
-textarea {
-  resize: none;
-}
 
 
 .section {
@@ -70,7 +67,8 @@ textarea {
 h1,
 h2,
 h3,
-p {
+p,
+ {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -546,8 +544,8 @@ img {
 .button {
   display: inline-block;
   border-radius: 4px;
-  padding: 10px 32px;
-  min-width: 136px;
+  padding: 10px ;
+  min-width: 200px;
   text-align: center;
   border: 1px solid transparent;
   
@@ -557,6 +555,7 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
+  letter-spacing: 0.06em;
 }
 
 .button-secondary:hover,
@@ -900,7 +899,10 @@ img {
 }
 
 .close-black {
- margin: 8px 8px 543px 490px;
+  position: absolute;
+  top:8px;
+  right: 8px;
+
  width: 30px;
  height: 30px;
  
@@ -909,4 +911,60 @@ img {
   cursor: pointer;
   background-color: var(--title-text-color);
 
+}
+
+
+.form {
+  width: 528px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-field input {
+
+  margin: 0;
+  padding:10px ;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-field label {
+  margin-bottom: 4px;
+}
+
+.form-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--secondary-color);
+
+  margin-bottom: 12px;
+
+}
+
+.form-field input::placeholder {
+  background-color: color: rgba(117, 117, 117, 0.5); 
+}
+
+.form .button {
+text-align: center;
+  
+
+}
+
+textarea {
+  resize: none;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 120px;
 }
