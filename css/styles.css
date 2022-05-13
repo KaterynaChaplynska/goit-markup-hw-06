@@ -67,7 +67,7 @@ body {
 h1,
 h2,
 h3,
-p,
+p
  {
   margin-top: 0;
   margin-bottom: 0;
@@ -858,6 +858,53 @@ img {
 
 
 
+.subscription {
+  margin-left: 93px;
+  padding-top: 12px;
+}
+
+.subscription .title {
+  margin-bottom: 20px; 
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--title-text-color);
+}
+
+.subscription-input {
+
+height: 50px;
+width: 358px;
+padding-left: 16px;
+margin-right: 12px;
+
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+transition-property: border;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+outline: transparent;
+
+background-color: var(--footer-color);
+}
+
+.subscription-button-icon {
+  margin-left: 12px;
+
+}
 
 .backdrop {
   position: fixed;
@@ -902,13 +949,24 @@ img {
   top:8px;
   right: 8px;
 
- width: 30px;
- height: 30px;
+  width: 30px;
+  height: 30px;
  
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
   background-color: var(--title-text-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.close-black:hover,
+.close-black:focus {
+ 
+  fill: var(--accent-color);
 
 }
 
@@ -1014,6 +1072,7 @@ img {
   resize: none;    
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: transparent;
 
   transition-property: border;
   transition-duration: 250ms;
@@ -1055,9 +1114,7 @@ img {
   fill: var(--accent-color);
 }
 
-.form .button {
-  
-}
+
 
 .form-consent .box {
   background-color: var(--secondary-color);
