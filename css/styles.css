@@ -903,6 +903,7 @@ background-color: var(--footer-color);
 
 .subscription-button-icon {
   margin-left: 13px;
+  
 }
 
 .backdrop {
@@ -1062,9 +1063,11 @@ background-color: var(--footer-color);
 }
 
  .check-option {
-   position: relative;
+  position: relative;
  }
-
+.check-input:focus + .check-box {
+  background-image: url(../images/check.svg);
+}
 
 .form-consent .conditions {
   font-style: normal;
